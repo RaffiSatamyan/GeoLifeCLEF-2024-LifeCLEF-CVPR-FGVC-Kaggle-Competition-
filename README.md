@@ -22,19 +22,5 @@ More generally, it could facilitate biodiversity inventories by developing locat
 
 Finally, this could be used for educational purposes through biodiversity exploration applications with features such as quests or contextualized educational pathways.
 
-# Evaluation
-
-The evaluation metric for this competition is the samples-averaged F1
--score (called F-Score Beta (Micro) on Kaggle) computed on the test set made of species presence-absence (PA) samples. In terms of machine learning, it is a multi-label classification task. The F1
--score is an average measure of overlap between the predicted and actual set of species present at a given location and time.
-Each test PA sample i
- is associated with a set of ground-truth labels Yi
-, namely the set of plant species (=speciesId) associated with a given combination of the columns patchID and dayOfYear (see the Data tab for details on the species observation data structure).
-For each sample, the submission will provide a list of labels, i.e. the set of species predicted present Yˆi,1,Yˆi,2,…,Yˆi,Ri
-.
-The micro F1
--score is then computed using
-
-F1=1N∑i=1NTPiTPi+(FPi+FNi)/2Where⎧⎩⎨⎪⎪⎪⎪TPi= Number of predicted species truly present, i.e. |Yˆi∩Yi|FPi= Number of species predicted but absent, i.e. |Yˆi∖Yi|FNi= Number of species not predicted but present, i.e. |Yi∖Yˆi|
 
 
